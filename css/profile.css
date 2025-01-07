@@ -1,1 +1,176 @@
 @charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+section {
+  width: 340px;
+  padding: 30px;
+  margin: 50px auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+section nav.menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section nav.menu a {
+  color: black;
+  font-size: 20px;
+}
+section nav.menu a:first-child {
+  float: left;
+}
+section nav.menu a:last-child {
+  float: right;
+}
+/* profile */
+.profile {
+  width: 100%;
+  text-align: center;
+  font-family: "arial";
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0px 10px 30px pink;
+}
+.profile h1 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1;
+  color: #323232;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  /* ㄴ문자를 전부 대문자로 바꿔줌 */
+}
+h2 {
+  font-size: 13px;
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: rgba(0, 0, 0, 0.516);
+}
+.profile .btnView {
+  padding: 8px 50px;
+  background-color: pink;
+  color: #fff;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  /* font-weight: bold; */
+  box-shadow: 5px 5px 10px rgb(189, 146, 153);
+  border-radius: 16px;
+  /* background: linear-gradient(170deg, pink,rgb(245, 149, 165)); */
+  transition: all 0.5s;
+}
+.profile a:hover {
+  background-color: rgb(251, 93, 119);
+  cursor: pointer;
+}
+.contact {
+  /* background-color: #ff708f; */
+  margin: 25px 0;
+}
+.contact li {
+  width: 100%;
+  margin: auto;
+  padding: 10px 30px;
+  border-bottom: 1px solid rgba(247, 121, 142, 0.598);
+}
+.contact li:last-child {
+  border: none;
+}
+.contact li i {
+  width: 20px;
+  margin-right: 10px;
+  text-shadow: 2px 2px 2px #ddd;
+  text-align: center;
+  color: #323232;
+}
+.contact li span {
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-family: "Orbitron", serif;
+  color: rgb(87, 86, 86);
+}
+/* 멤버스 */
+.others {
+  width: 100%;
+  text-align: center;
+}
+.others a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px;
+  border-radius: 50%;
+  opacity: 0.6;
+  filter: saturate(0.7);
+  background-color: pink;
+}
+.others a.on{
+  opacity: 1;
+  filter: saturate(1);
+}
+.others a:nth-of-type(1) {
+  background-color: rgb(243, 99, 128);
+  box-shadow: 5px 5px 10px rgba(247, 121, 142, 0.598);
+}
+.others a:nth-of-type(2) {
+  background-color: rgb(93, 93, 156);
+  box-shadow: 5px 5px 10px rgba(247, 121, 142, 0.598);
+}
+.others a:nth-of-type(3) {
+  background-color: rgb(116, 79, 128);
+  box-shadow: 5px 5px 10px rgba(247, 121, 142, 0.598);
+}
+.others a:nth-of-type(4) {
+  background-color: rgba(115, 60, 71, 0.653);
+  box-shadow: 5px 5px 10px rgba(247, 121, 142, 0.598);
+}
+/* 멤버1 */
+body.member1{
+  background-color: rgb(209, 134, 178);
+}
+/* 멤버2 */
+body.member2{
+  background-color: rgb(93, 93, 156);
+}
+body.member2 .profile img{
+  box-shadow: 5px 15px 30px rgba(41, 101, 230, 0.8);
+}
+body.member2 .btnView{
+  background-color: rgb(31, 16, 143);
+}
+/* 멤버3 */
+body.member3{
+  background-color: rgb(116, 79, 128);
+}
+body.member3 .profile img{
+  box-shadow: 5px 15px 30px rgba(109, 25, 92, 0.8);
+}
+body.member3 .btnView{
+  background-color: rgb(106, 8, 125);
+}
+/* 멤버4 */
+body.member4{
+  background-color: rgba(108, 19, 19, 0.653);
+}
+body.member4 .profile img{
+  box-shadow: 5px 15px 30px rgba(131, 44, 49, 0.8);
+}
+body.member4 .btnView{
+  background-color: rgb(86, 2, 2);
+}
